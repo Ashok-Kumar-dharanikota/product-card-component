@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(234, 234, 222);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#card {
+    width: auto;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+}
+
+.cover-image {
+    background-color: rgb(30, 21, 8);
+}
+
+.name {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 600;
+}
+
+
+.details {
+    background-color: white;
+    padding: 40px;
+}
+
+.photo {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: rgba(32, 26, 26, 0.495);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Fraunces', serif;
+}
+
+.price {
+    display: flex;
+    align-items: center;    
+}
+
+.price p {
+    margin: 30px;
+    text-decoration: line-through;
+}
+
+button {
+    background-color: rgba(0, 128, 0, 0.758);
+    padding: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    font-size: 15px;
+}
+
+button img {
+    margin-right: 20px;
+}
+
+.attribution {
+    margin: 30px;
+}
+
+
+/* Styles for devices up to 375px width */
+@media only screen and (max-width: 376px) {
+    
+    body {
+        display: inline-block;
+    }
+    #card {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    img {
+        src: local('./images/image-product-mobile.jpg');
+    }
+    .cover-image, .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .details {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .price p {
+        margin: 15px;
+    }
+
+    .attribution {
+        margin: 20px;
+    }
+}
+

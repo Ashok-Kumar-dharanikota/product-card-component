@@ -92,9 +92,6 @@ button img {
         flex-direction: column;
     }
     
-    img {
-        src: local('./images/image-product-mobile.jpg');
-    }
     .cover-image, .photo {
         width: 100%;
         height: auto;
